@@ -1,3 +1,7 @@
+import pandas as pd
+import sys
+
+df = pd.read_csv(sys.argv[0])
 def handler(context):
     # Parameters
     param1 = context.get_param('param1')
