@@ -1,4 +1,4 @@
-def save_property():
+def save_properties():
     source_file = "/User/igztraining/mlrun/data/demo.csv"
     target_file = "/User/igztraining/mlrun/data/condos.csv"
 
@@ -15,7 +15,7 @@ def save_property():
     print(f"file saved to {target_file}")
     
     
-def filter_property():
+def filter_properties():
     source_file = "/User/igztraining/mlrun/data/demo.csv"
     target_file = "/User/igztraining/mlrun/data/condos.csv"
 

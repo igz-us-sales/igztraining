@@ -13,7 +13,7 @@ def save_property(context, source_file='',target_file=''):
     print(f"file saved to {target_file}")
     
     
-def filter_property(context):
+def filter_properties(context):
     source_file = "/User/igztraining/mlrun/data/demo.csv"
     target_file = "/User/igztraining/mlrun/data/condos.csv"
 
