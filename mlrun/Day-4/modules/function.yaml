@@ -1,0 +1,51 @@
+kind: job
+metadata:
+  name: properties-management
+  tag: ''
+  hash: 16a267abb88337d18ed874b9c1b7e1c27800d358
+  project: default
+  labels:
+    author: mdl
+  categories:
+  - bi
+spec:
+  command: ''
+  args: []
+  image: mlrun/mlrun:0.5.1
+  env: []
+  default_handler: save_property
+  entry_points:
+    save_property:
+      name: save_property
+      doc: ''
+      parameters:
+      - name: context
+        default: ''
+      - name: source_file
+        default: ''
+      - name: target_file
+        default: ''
+      outputs:
+      - default: ''
+      lineno: 8
+    filter_properties:
+      name: filter_properties
+      doc: ''
+      parameters:
+      - name: context
+        default: ''
+      - name: source_data
+        type: DataItem
+        default: ''
+      - name: target_dataset
+        default: ''
+      - name: city
+        default: ''
+      outputs:
+      - default: ''
+      lineno: 18
+  description: Filter properties
+  build:
+    functionSourceCode: IyBHZW5lcmF0ZWQgYnkgbnVjbGlvLmV4cG9ydC5OdWNsaW9FeHBvcnRlcgoKaW1wb3J0IG9zCmltcG9ydCBqc29uCmltcG9ydCBwYW5kYXMgYXMgcGQKZnJvbSBtbHJ1bi5kYXRhc3RvcmUgaW1wb3J0IERhdGFJdGVtCgpkZWYgc2F2ZV9wcm9wZXJ0eShjb250ZXh0LHNvdXJjZV9maWxlPScnLHRhcmdldF9maWxlPScnKToKICAgIHByaW50KHNvdXJjZV9maWxlKQogICAgYWxsX3Byb3BlcnRpZXNfZGYgPSBwZC5yZWFkX2Nzdihzb3VyY2VfZmlsZSkKICAgIGNvbmRvX3Byb3BlcnRpZXNfZGYgPSBhbGxfcHJvcGVydGllc19kZlthbGxfcHJvcGVydGllc19kZlsidHlwZSJdPT0iQ29uZG8iXQogICAgCiAgICBjb250ZXh0LmxvZ19yZXN1bHQoJ3Byb3BlcnRpZXNfYXZhaWxhYmxlJyxjb25kb19wcm9wZXJ0aWVzX2RmLnNoYXBlWzBdKQogICAgCiAgICBjb250ZXh0LmxvZ19kYXRhc2V0KCdjb25kb19wcm9wZXJ0aWVzJyxkZj1jb25kb19wcm9wZXJ0aWVzX2RmLGZvcm1hdD0iY3N2IikKICAgIHJldHVybgoKZGVmIGZpbHRlcl9wcm9wZXJ0aWVzKGNvbnRleHQsCiAgICAgICAgICAgICAgICAgICAgICBzb3VyY2VfZGF0YTogRGF0YUl0ZW0sCiAgICAgICAgICAgICAgICAgICAgICB0YXJnZXRfZGF0YXNldD0nJywKICAgICAgICAgICAgICAgICAgICAgIGNpdHk9JycpOgogICAgICAgIAogICAgZGYgPSBzb3VyY2VfZGF0YS5hc19kZigpCiAgICAKICAgIGNpdHlfZGYgPSBkZltkZlsiY2l0eSJdPT1jaXR5XQogICAgCiAgICBjb250ZXh0LmxvZ19kYXRhc2V0KHRhcmdldF9kYXRhc2V0LGRmPWNpdHlfZGYsZm9ybWF0PSJjc3YiKQoK
+    commands: []
+    code_origin: https://github.com/marcelonyc/igztraining#58e03aa9ee1d432b5393a419fba577ec67855d84:properties-management.ipynb
