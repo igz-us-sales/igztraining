@@ -75,7 +75,7 @@
       - |-
         -f
       - |-
-        db://properties-management/properities-handler@02e075aad6a636c05ca72026e9c71c81e4294cc9
+        db://properties-management/properities-handler@9f78d695b2bc81f6af1afbfb4ff40b21771fda25
       - |-
         -p
       - |-
@@ -167,7 +167,7 @@
       - |-
         -f
       - |-
-        db://properties-management/properities-handler@02e075aad6a636c05ca72026e9c71c81e4294cc9
+        db://properties-management/properities-handler@9f78d695b2bc81f6af1afbfb4ff40b21771fda25
       - |-
         -p
       - |-

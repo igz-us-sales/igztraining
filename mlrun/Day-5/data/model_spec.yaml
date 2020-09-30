@@ -1,0 +1,20 @@
+key: my model
+kind: model
+iter: 0
+tree: b276d13347654103baf0e8203f3beca5
+src_path: data/
+target_path: data/
+hash: 38261766390a38e5d68718b720ac8fe9b831792d
+size: 11
+db_key: model_my model
+model_file: /User/igztraining/mlrun/Day-5/data/model.json
+inputs: []
+outputs: []
+framework: ''
+producer:
+  name: model
+  kind: run
+  uri: b276d13347654103baf0e8203f3beca5
+  owner: null
+sources: []
+project: ''
