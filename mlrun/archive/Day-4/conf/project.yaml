@@ -1,0 +1,9 @@
+name: properties-management
+functions:
+- url: /User/igztraining/mlrun/modules/function.yaml
+  name: properties-management
+workflows:
+- name: main
+  path: workflow.py
+artifacts: []
+artifact_path: ''
