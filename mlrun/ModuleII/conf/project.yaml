@@ -1,0 +1,59 @@
+name: properties-management
+functions:
+- name: properties-handler
+  spec:
+    kind: job
+    metadata:
+      name: properities-handler
+      tag: ''
+      project: properties-management
+    spec:
+      command: ''
+      args: []
+      image: mlrun/mlrun
+      env:
+      - name: V3IO_API
+        value: ''
+      - name: V3IO_USERNAME
+        value: ''
+      - name: V3IO_ACCESS_KEY
+        value: ''
+      default_handler: ''
+      entry_points:
+        save_properties:
+          name: save_properties
+          doc: ''
+          parameters:
+          - name: context
+            default: ''
+          - name: source_file
+            default: ''
+          - name: target_file
+            default: ''
+          outputs:
+          - default: ''
+          lineno: 8
+        filter_properties:
+          name: filter_properties
+          doc: ''
+          parameters:
+          - name: context
+            default: ''
+          - name: source_data
+            type: DataItem
+            default: ''
+          - name: target_dataset
+            default: ''
+          - name: city
+            default: ''
+          outputs:
+          - default: ''
+          lineno: 18
+      description: ''
+      build:
+        functionSourceCode: IyBHZW5lcmF0ZWQgYnkgbnVjbGlvLmV4cG9ydC5OdWNsaW9FeHBvcnRlcgoKaW1wb3J0IG9zCmltcG9ydCBqc29uCmltcG9ydCBwYW5kYXMgYXMgcGQKZnJvbSBtbHJ1bi5kYXRhc3RvcmUgaW1wb3J0IERhdGFJdGVtCgpkZWYgc2F2ZV9wcm9wZXJ0aWVzKGNvbnRleHQsc291cmNlX2ZpbGU9JycsdGFyZ2V0X2ZpbGU9JycpOgogICAgcHJpbnQoc291cmNlX2ZpbGUpCiAgICBhbGxfcHJvcGVydGllc19kZiA9IHBkLnJlYWRfY3N2KHNvdXJjZV9maWxlKQogICAgY29uZG9fcHJvcGVydGllc19kZiA9IGFsbF9wcm9wZXJ0aWVzX2RmW2FsbF9wcm9wZXJ0aWVzX2RmWyJ0eXBlIl09PSJDb25kbyJdCiAgICAKICAgIGNvbnRleHQubG9nX3Jlc3VsdCgncHJvcGVydGllc19hdmFpbGFibGUnLGNvbmRvX3Byb3BlcnRpZXNfZGYuc2hhcGVbMF0pCiAgICAKICAgIGNvbnRleHQubG9nX2RhdGFzZXQoJ2NvbmRvX3Byb3BlcnRpZXMnLGRmPWNvbmRvX3Byb3BlcnRpZXNfZGYsZm9ybWF0PSJDU1YiKQogICAgcmV0dXJuCgpkZWYgZmlsdGVyX3Byb3BlcnRpZXMoY29udGV4dCwKICAgICAgICAgICAgICAgICAgICAgIHNvdXJjZV9kYXRhOiBEYXRhSXRlbSwKICAgICAgICAgICAgICAgICAgICAgIHRhcmdldF9kYXRhc2V0PScnLAogICAgICAgICAgICAgICAgICAgICAgY2l0eT0nJyk6CiAgICAgICAgCiAgICBkZiA9IHNvdXJjZV9kYXRhLmFzX2RmKCkKICAgIAogICAgY2l0eV9kZiA9IGRmW2RmWyJjaXR5Il09PWNpdHldCiAgICAKICAgIGNvbnRleHQubG9nX2RhdGFzZXQodGFyZ2V0X2RhdGFzZXQsZGY9Y2l0eV9kZixmb3JtYXQ9ImNzdiIpCgo=
+        commands: []
+        code_origin: https://github.com/marcelonyc/igztraining#c5597856d7af99cf1ad88c5b1e848f830ca96498:../modules/mlrun_functions.ipynb
+workflows: []
+artifacts: []
+artifact_path: ''
